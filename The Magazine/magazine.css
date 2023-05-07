@@ -1,11 +1,11 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  /* border-top: 10px solid #1098ad; */
+}
+
+body {
+  color: red;
   font-family: sans-serif;
-  color: #444444;
+  border-top: 10px solid red;
 }
 
 h1,
@@ -80,9 +80,9 @@ aside {
   border-bottom: 5px solid #1098ad;
 }
 
-body {
-  /* background-color: rgb(255, 187, 0); */
-}
+/* body { */
+/* background-color: rgb(255, 187, 0);*/
+/* } */
 
 /* .first-li {
     font-weight: bold;
@@ -110,28 +110,55 @@ li:nth-child(odd) {
 
 /* Misconception: This won't work! */
 article p:first-child {
-    color: red;
+  color: red;
 }
 
 /* Styling links */
 a:link {
-    color: #1098ad;
-    text-decoration:none;
+  color: #1098ad;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #1098ad;
+  color: #1098ad;
 }
 
 a:hover {
-    color: orangered;
-    font-weight:bold;
-    text-decoration: underline dashed orangered;
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline solid orangered;
 }
 
 a:active {
-    background-color: black;
-    font-style: italic;
+  background-color: black;
+  font-style: italic;
 }
 
 /* LVHA We need to define these states in this order*/
+
+/* Resolving conflicts */
+
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color:green !important;
+} */
+
+/* nav a:link,
+nav p {
+  font-size:18px;
+} */
+
+nav {
+  font-size: 18px;
+}
